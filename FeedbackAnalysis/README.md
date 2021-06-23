@@ -1,4 +1,4 @@
-# Sentiment Analysis in Python
+# Sentiment Analysis in Python (Django)
 This project is a plain example of how to make a text sentiment analysis website. Project code is inside the folder named as `onedjango`.
 
 # Output
