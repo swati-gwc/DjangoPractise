@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Classification</title>
+</head>
+<body>
+    <h1>Glass Classification</h1>
+    <h4>Can you correctly identify glass type?</h4>
+    Fill the data asked below so the ML model can predict the type of glass.<br/>
+    <form action="{% url 'result' %}">
+        {% csrf_token %}
+        Refractive Index, RI: <input type="text" required name="RI"> <br><br>
+        Sodium, Na: <input type="text"  required name="Na"> <br><br>
+        Magnesium, Mg: <input type="text"  required name="Mg"> <br><br>
+        Aluminium, Al: <input type="text"  required name="Al"> <br><br>
+        Silicon, Si: <input type="text"  required name="Si"> <br><br>
+        Potassium, K:  <input type="text"  required name="K"> <br><br>
+        Calcium, Ca: <input type="text"  required name="Ca"> <br><br>
+        Barium, Ba: <input type="text"  required name="Ba"> <br><br>
+        Iron, Fe: <input type="text"  required name="Fe"> <br><br>
+
+        <input type="submit" value="submit">
+
+    </form>
+    <h4>Some Sample input for your reference:</h4>
+    <table>
+        <tr>
+            <th>Sno</th>
+            <th>RI</th>
+            <th>Na</th>
+            <th>Mg</th>
+            <th>Al</th>
+            <th>Si</th>
+            <th>K</th>
+            <th>Ca</th>
+            <th>Ba</th>
+            <th>Fe</th>
+            
+          </tr>
+        <tr>
+            <td>A</td>
+            <td>1.52101</td>
+            <td>13.64</td>
+            <td>4.49</td>
+            <td>1.1</td>
+            <td>71.78</td>
+            <td>0.06</td>
+            <td>8.75</td>
+            <td>0</td>
+            <td>0</td>
+           
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>1.52119</td>
+            <td>14</td>
+            <td>2.39</td>
+            <td>1.56</td>
+            <td>72.37</td>
+            <td>0</td>
+            <td>9.57</td>
+            <td>0</td>
+            <td>0</td>            
+            
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>1.5241</td>
+            <td>13.83</td>
+            <td>2.9</td>
+            <td>1.17</td>
+            <td>71.15</td>
+            <td>0.08</td>
+            <td>10.79</td>
+            <td>0</td>
+            <td>0</td>
+           
+        </tr>
+    </table>
+    <h4>Predicted Output will come in range of (1-7)</h4>
+</body>
+</html>
