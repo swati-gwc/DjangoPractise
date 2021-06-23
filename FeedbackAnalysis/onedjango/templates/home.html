@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Analysis</title>
+</head>
+<body>
+    <h1>Feedback Analysis</h1>
+    <p>Enter your feedback in the box below and then click submit button to analyze.</p>
+    
+    <form  id= "feedbackform" action="{% url 'result' %}">
+        {% csrf_token %}
+       
+        <textarea form="feedbackform" name="feedback" rows="4" cols="50"></textarea>     
+        <br>       
+        <input type="submit" value="submit">
+
+    </form>
+   
+</body>
+
+</html>

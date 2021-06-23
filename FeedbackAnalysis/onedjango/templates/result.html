@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Analysis</title>
+</head>
+<body>
+    <h1>Feedback Analysis</h1>
+    
+    <h3>Percentage wise analysis of feedback :</h3>  
+    <p id="neatdata"></p>
+   
+</body>
+<script>
+    var data = JSON.parse("{{ans|escapejs}}");
+    // var dataNode = document.getElementById('ans');
+    // dataNode.innerHTML+="{{ans|escapejs}}";
+    var dataNode  = document.getElementById('neatdata');
+    // for(var x in data){
+    //     dataNode.innerHTML+=x+' : '+data[x]+'<br><br>';
+    // }
+    dataNode.innerHTML = 'Negative = '+ data[0]+ '<br><br>' + 'Neutral = '+ data[1]+ '<br><br>' + 'Positive = '+ data[2]+ '<br><br>'+'<b>Overall Conclusion is = </b>'+ data[3]+ '<br><br>';
+</script>
+</html>
