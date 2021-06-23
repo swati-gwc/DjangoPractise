@@ -16,5 +16,5 @@ This project was developed by following this youtube tutorial  : [Click Here](ht
 To download the dataset used to develop the model: [Click Here](https://www.kaggle.com/uciml/glass)
 
 ## Model:
-To view the ML model code: [Click Here](/model)
+To view the ML model code: [Click Here](model/model.py)
 
