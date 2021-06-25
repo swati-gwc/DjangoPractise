@@ -1,10 +1,11 @@
 # Django Practise
 
 ## Usefull commands related to Django
-1. To install Django `pip install Django`
-2. Check if django is installed or not by typing `python -m django --version`
-3. To create Django Project `django-admin startproject projectname`
-4. To start django `python manage.py runserver`
+1. To install Django : `pip install Django`
+2. Check if django is installed or not : `python -m django --version`
+3. To create Django Project :  `django-admin startproject projectname`
+4. To start/run django project created:  `python manage.py runserver`. Usually it runs at 127.0.0.1:8000/.
+5. To create Django app :  `python manage.py startapp appname`. Here "appname" is user-defined so you can write anything instead of this word. Make sure you are inside the terminal at the same level as manage.py while running this command. 
 
 ## List of Projects
 
