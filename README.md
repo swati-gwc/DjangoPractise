@@ -1,5 +1,11 @@
 # Django Practise
 
+## Usefull commands related to Django
+1. To install Django `pip install Django`
+2. Check if django is installed or not by typing `python -m django --version`
+3. To create Django Project `django-admin startproject projectname`
+4. To start django `python manage.py runserver`
+
 ## List of Projects
 
 1. Deploy ML in Django ([View](DeployML_in_Django/))
