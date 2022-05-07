@@ -6,6 +6,8 @@
 3. To create Django Project :  `django-admin startproject projectname`
 4. To start/run django project created:  `python manage.py runserver`. Usually it runs at 127.0.0.1:8000/.
 5. To create Django app :  `python manage.py startapp appname`. Here "appname" is user-defined so you can write anything instead of this word. Make sure you are inside the terminal at the same level as manage.py while running this command. 
+6. If you create any changes to models or app. For example, adding new column to a model then after making changes you need to execute two commands in terminal that are `python manage.py makemigrations <app-name>` and `python manage.py migrate`. [Link](https://stackoverflow.com/questions/50603258/django-how-can-i-add-delete-fields-in-sqlite3-database)
+
 
 ## List of Projects
 
